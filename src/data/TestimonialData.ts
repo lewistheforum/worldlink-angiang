@@ -1,0 +1,50 @@
+export const feedbacksData = [
+  {
+    name: "Nguyễn Thị Mai",
+    avatar: "/images/feedback1.webp",
+    school: "Đại Học Kinh Tế TPHCM",
+    quote: "Lớp học năng động, tài liệu sát với đề thi thật. Mình rất hài lòng với kết quả đạt được sau khóa học này.",
+    rating: 5,
+    overall: "8.0",
+  },
+  {
+    name: "Trần Văn Hùng",
+    avatar: "/images/feedback2.webp",
+    school: "Đại Học Bách Khoa",
+    quote: "Giáo viên tận tâm, phương pháp dạy dễ hiểu. Mình cải thiện kỹ năng viết đáng kể sau khóa học.",
+    rating: 4.8,
+    overall: "7.5",
+  },
+  {
+    name: "Lê Như Huỳnh",
+    avatar: "/images/feedback3.webp",
+    school: "THPT Chuyên Thoại Ngọc Hầu",
+    quote: "Môi trường học tập thân thiện. Cơ sở vật chất tốt. Mình đã đạt được điểm IELTS như mong muốn để đi du học.",
+    rating: 5,
+    overall: "8.5",
+  },
+  {
+    name: "Phạm Tấn Phát",
+    avatar: "/images/feedback4.webp",
+    school: "Đại Học An Giang",
+    quote: "Đội ngũ tư vấn rất nhiệt tình, giúp mình chọn đúng lộ trình học. Khóa học thực sự đáng tiền.",
+    rating: 4.9,
+    overall: "7.0",
+  },
+  {
+    name: "Hoàng Thanh Tâm",
+    avatar: "/images/feedback5.webp",
+    school: "Đại Học Cần Thơ",
+    quote: "Tài liệu rất hay và được cập nhật liên tục. Lớp học tương tác nhiều giúp mình tự tin nói tiếng Anh hơn.",
+    rating: 5,
+    overall: "8.0",
+  },
+  {
+    name: "Vũ Minh Thư",
+    avatar: "/images/feedback6.webp",
+    school: "Đại Học Sư Phạm",
+    quote: "Phương pháp giảng dạy rất thực tế và lôi cuốn, giáo trình được cập nhật liên tục rất sát với bài thi thật.",
+    rating: 4.8,
+    overall: "7.0",
+  }
+];

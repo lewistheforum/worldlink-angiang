@@ -5,6 +5,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  
+  /* Color Palette */
+  --color-palette-1: #004fa8;
+  --color-palette-2: #0088d4;
+  --color-palette-3: #a4d700;
+  --color-palette-4: #1b992b;
+  --color-palette-5: #009f98;
+  --color-palette-6: #ffffff;
+
   /* --font-dirty-roma: "Super-Ocean-Personal-Use", sans-serif; */
 }
 
