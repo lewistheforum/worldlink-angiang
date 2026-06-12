@@ -2,27 +2,14 @@
 
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
-import HeroSection from "./components/HeroSection";
-import FeaturesSection from "./components/FeaturesSection";
-import CourseCatalogSection from "./components/CourseCatalogSection";
-import VirtualMentorshipSection from "./components/VirtualMentorshipSection";
-import PopularCoursesSection from "./components/PopularCoursesSection";
-import TestimonialSection from "./components/TestimonialSection";
-import AppDownloadSection from "./components/AppDownloadSection";
-import DocumentGallerySection from "./components/DocumentGallerySection";
+import HomeMain from "./main";
 
 export default function HomeClient() {
   return (
-    <div className="mx-auto min-h-screen font-sans">
+    <div className="mx-auto min-h-screen font-sans flex flex-col">
       <Header />
-      <main>
-        <HeroSection />
-        <VirtualMentorshipSection />
-        <CourseCatalogSection />
-        <TestimonialSection />
-        <PopularCoursesSection />
-        <FeaturesSection />
-        <DocumentGallerySection />
+      <main className="flex-1">
+        <HomeMain />
       </main>
       <Footer />
     </div>

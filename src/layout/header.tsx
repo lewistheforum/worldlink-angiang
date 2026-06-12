@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { HEADER_CONSTANTS } from "@/constants/LayoutConstants";
+import { HEADER_CONSTANTS } from "@/constants/layout-constants";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -11,8 +11,8 @@ export default function Header() {
   const navLinks = HEADER_CONSTANTS.NAV_LINKS;
 
   return (
-    <header className="fixed top-6 left-0 w-full z-50 px-4 md:px-8">
-      <div className="max-w-6xl mx-auto bg-white rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] px-6 lg:px-8 py-2 flex items-center justify-between border border-gray-100">
+    <header className="fixed top-6 left-0 w-full z-50 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto bg-white rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] px-6 lg:px-8 py-2 flex items-center justify-between border border-gray-100">
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -40,7 +40,7 @@ export default function Header() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Link 
-            href="/lien-he"
+            href="/contact"
             className="bg-palette-1 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-palette-2 transition shadow-md"
           >
             {HEADER_CONSTANTS.CONTACT_BTN}
@@ -77,7 +77,7 @@ export default function Header() {
               </Link>
             ))}
             <Link 
-              href="/lien-he"
+              href="/contact"
               className="mt-4 bg-palette-1 text-white px-6 py-3 rounded-full font-semibold inline-block"
               onClick={() => setOpen(false)}
             >

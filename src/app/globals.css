@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #dfedff;
+  /* Màu nền xanh dương nhạt (Light blue) thay cho màu trắng */
   --foreground: #171717;
-  
+
   /* Color Palette */
   --color-palette-1: #004fa8;
   --color-palette-2: #0088d4;
@@ -36,16 +37,19 @@
   .font-outline-2 {
     -webkit-text-stroke: 1.5px black;
   }
+
   .font-outline-4 {
     -webkit-text-stroke: 4px black;
   }
 }
 
 @keyframes stretch {
+
   0%,
   100% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(1.1);
   }
@@ -56,10 +60,12 @@
 }
 
 @keyframes updown {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
@@ -73,12 +79,15 @@
   0% {
     transform: rotate(0deg);
   }
+
   40% {
     transform: rotate(8deg);
   }
+
   70% {
     transform: rotate(-8deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
@@ -91,6 +100,7 @@
 .delay-0 {
   animation-delay: 0s;
 }
+
 .delay-1 {
   animation-delay: 0.2s;
 }
