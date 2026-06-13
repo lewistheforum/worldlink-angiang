@@ -1,0 +1,12 @@
+{
+  "header": {
+    "navLinks": {
+      "home": "ホーム",
+      "aboutUs": "私たちについて",
+      "languageTraining": "語学研修",
+      "studyAbroad": "留学について",
+      "contact": "お問い合わせ"
+    },
+    "contactBtn": "お問い合わせ"
+  }
+}

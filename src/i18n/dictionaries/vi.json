@@ -1,0 +1,12 @@
+{
+  "header": {
+    "navLinks": {
+      "home": "Trang chủ",
+      "aboutUs": "Giới thiệu",
+      "languageTraining": "Đào tạo Ngoại ngữ",
+      "studyAbroad": "Tư vấn Du học",
+      "contact": "Liên hệ"
+    },
+    "contactBtn": "Liên hệ"
+  }
+}

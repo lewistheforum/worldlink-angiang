@@ -1,0 +1,12 @@
+{
+  "header": {
+    "navLinks": {
+      "home": "홈",
+      "aboutUs": "회사 소개",
+      "languageTraining": "어학 연수",
+      "studyAbroad": "유학 상담",
+      "contact": "문의하기"
+    },
+    "contactBtn": "문의하기"
+  }
+}

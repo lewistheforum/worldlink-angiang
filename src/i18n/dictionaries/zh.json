@@ -1,0 +1,12 @@
+{
+  "header": {
+    "navLinks": {
+      "home": "首页",
+      "aboutUs": "关于我们",
+      "languageTraining": "语言培训",
+      "studyAbroad": "留学咨询",
+      "contact": "联系我们"
+    },
+    "contactBtn": "联系我们"
+  }
+}
