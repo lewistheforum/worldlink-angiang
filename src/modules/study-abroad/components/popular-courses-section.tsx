@@ -1,6 +1,6 @@
 "use client";
 
-import { Play, Video, CheckCircle2, Globe } from "lucide-react";
+import { CheckCircle2, Globe } from "lucide-react";
 import * as motion from "framer-motion/client";
 import { marketsData as markets, servicesData as services } from "@/data/popular-courses-data";
 import { POPULAR_COURSES_CONSTANTS } from "@/constants/popular-courses-constants";

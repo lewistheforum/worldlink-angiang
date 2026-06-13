@@ -3,7 +3,7 @@
 import { useState } from "react";
 import * as motion from "framer-motion/client";
 import * as Dialog from "@radix-ui/react-dialog";
-import { X, ZoomIn, FileText, Eye } from "lucide-react";
+import { X, FileText, Eye } from "lucide-react";
 import { documentsData as documents } from "@/data/document-gallery-data";
 import { STUDY_ABROAD_CONSTANTS } from "@/constants/study-abroad-constants";
 
