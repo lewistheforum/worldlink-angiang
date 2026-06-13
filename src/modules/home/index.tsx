@@ -2,13 +2,15 @@
 
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
-import B1 from "../b1";
+import HomeMain from "./main";
 
 export default function HomeClient() {
   return (
-    <div className="mx-auto min-h-screen max-w-[1990px]">
+    <div className="mx-auto min-h-screen font-sans flex flex-col">
       <Header />
-      <B1 />
+      <main className="flex-1">
+        <HomeMain />
+      </main>
       <Footer />
     </div>
   );

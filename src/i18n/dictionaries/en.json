@@ -1,0 +1,12 @@
+{
+  "header": {
+    "navLinks": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "languageTraining": "Language Training",
+      "studyAbroad": "Study Abroad",
+      "contact": "Contact"
+    },
+    "contactBtn": "Contact Us"
+  }
+}
