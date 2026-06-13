@@ -1,6 +1,6 @@
 import type { Locale } from './settings'
 
-const dictionaries: Record<Locale, () => Promise<any>> = {
+const dictionaries: Record<Locale, () => Promise<unknown>> = {
     vi: () => import('./dictionaries/vi.json').then(module => module.default),
     en: () => import('./dictionaries/en.json').then(module => module.default),
     ja: () => import('./dictionaries/ja.json').then(module => module.default),

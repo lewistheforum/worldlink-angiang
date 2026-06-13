@@ -14,8 +14,10 @@ export default function Header() {
   const router = useRouter();
 
   const segments = pathname.split("/");
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const currentLocale = (i18n.locales.includes(segments[1] as any) ? segments[1] : i18n.defaultLocale) as Locale;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [dict, setDict] = useState<any>(null);
 
   useEffect(() => {
@@ -38,6 +40,7 @@ export default function Header() {
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value;
     const newSegments = [...segments];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     if (i18n.locales.includes(newSegments[1] as any)) {
       newSegments[1] = newLocale;
     } else {
