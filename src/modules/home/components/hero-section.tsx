@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Check, Video, Youtube, Play, Target } from "lucide-react";
 import * as motion from "framer-motion/client";
 import { HERO_CONSTANTS } from "@/constants/hero-constants";

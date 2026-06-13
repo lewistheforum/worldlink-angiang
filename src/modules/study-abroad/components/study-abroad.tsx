@@ -2,7 +2,6 @@ import StudyAbroadHero from "./study-abroad-hero";
 import StudyAbroadMarkets from "./study-abroad-markets";
 import StudyAbroadDocuments from "./study-abroad-documents";
 import StudyAbroadCTA from "./study-abroad-cta";
-import Link from "next/link";
 
 export default function StudyAbroad() {
   return (

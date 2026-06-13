@@ -9,7 +9,7 @@ const TikTokIcon = ({ size = 24, className = "" }) => (
   </svg>
 );
 
-const ZaloIcon = ({ size = 24, className = "" }) => (
+const ZaloIcon = () => (
   <span className="font-extrabold text-[15px] tracking-tight text-blue-600">Zalo</span>
 );
 

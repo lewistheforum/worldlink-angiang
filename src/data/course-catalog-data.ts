@@ -64,7 +64,19 @@ const generateCourses = (lang: string) => {
   ];
 };
 
+export interface Course {
+  level: string;
+  levelColor: string;
+  language: string;
+  title: string;
+  author: string;
+  rating: number;
+  hours: number;
+  price: number;
+  image: string;
+}
+
 export const allCoursesData = languagesData.reduce((acc, lang) => {
   acc[lang] = generateCourses(lang);
   return acc;
-}, {} as Record<string, any[]>);
+}, {} as Record<string, Course[]>);

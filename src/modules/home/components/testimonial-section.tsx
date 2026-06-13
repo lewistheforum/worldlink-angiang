@@ -26,7 +26,7 @@ export default function TestimonialSection() {
 
       <div className="max-w-6xl mx-auto relative h-[300px] flex items-center justify-center">
         {feedbacks.map((fb, idx) => {
-          let offset = (idx - currentIndex + feedbacks.length) % feedbacks.length;
+          const offset = (idx - currentIndex + feedbacks.length) % feedbacks.length;
           
           let transform = "scale(0.85) translateX(220%)";
           let opacity = 0;

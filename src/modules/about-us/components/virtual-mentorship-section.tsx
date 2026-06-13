@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { Play, Video } from "lucide-react";
 import * as motion from "framer-motion/client";
 import { useState, useEffect } from "react";
 import { carouselImagesData as carouselImages } from "@/data/virtual-mentorship-data";

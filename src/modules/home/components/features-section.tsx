@@ -1,4 +1,3 @@
-import { Target, Rocket, Gem } from "lucide-react";
 import { featuresData as features } from "@/data/features-data";
 import { FEATURES_CONSTANTS } from "@/constants/features-constants";
 
