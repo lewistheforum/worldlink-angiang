@@ -19,7 +19,7 @@ export default function VirtualMentorshipSection() {
     return () => clearInterval(timer);
   }, [images.length]);
   return (
-    <section id="gioi-thieu" className="bg-white py-20 px-6 md:px-12 lg:px-24 overflow-hidden relative">
+    <section id="gioi-thieu" className="bg-white py-16 md:py-20 px-4 md:px-12 lg:px-24 overflow-hidden relative">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center relative z-10">
         
         {/* Left text */}
@@ -30,7 +30,7 @@ export default function VirtualMentorshipSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold leading-tight mb-4"
+            className="text-3xl md:text-5xl font-bold leading-tight mb-4"
           >
             {VIRTUAL_MENTORSHIP_CONSTANTS.TITLE}
           </motion.h2>

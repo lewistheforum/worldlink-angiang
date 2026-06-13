@@ -7,16 +7,16 @@ import { HERO_CONSTANTS } from "@/constants/hero-constants";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="pt-44 pb-24 px-6 md:px-12 lg:px-24 overflow-hidden relative">
+    <section id="home" className="pt-32 md:pt-44 pb-16 md:pb-24 px-4 md:px-12 lg:px-24 overflow-hidden relative">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative">
 
         {/* Left Column */}
-        <div className="flex-1 space-y-8 z-10 relative lg:-mt-24">
+        <div className="w-full lg:flex-1 space-y-8 z-10 relative lg:-mt-24">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight tracking-tight"
           >
             {HERO_CONSTANTS.TITLE_PART_1} <br className="hidden md:block" />
             <span className="bg-palette-2 text-white px-5 py-1 mt-2 rounded-2xl inline-block transform -rotate-2 shadow-md">{HERO_CONSTANTS.TITLE_PART_2}</span>
@@ -63,7 +63,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Column - Floating Collage */}
-        <div className="flex-1 w-full h-[500px] lg:h-[650px] relative mt-8 lg:mt-0">
+        <div className="w-full lg:flex-1 h-[350px] min-h-[350px] sm:min-h-[500px] lg:min-h-[650px] relative mt-16 lg:mt-0">
 
           {/* Top Left - Yellow Bubble */}
           <motion.div
@@ -74,7 +74,7 @@ export default function HeroSection() {
               opacity: { duration: 0.5 },
               y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }
             }}
-            className="absolute top-0 left-0 w-44 h-44 lg:w-56 lg:h-56 bg-palette-3/20 rounded-[2.5rem] z-10 shadow-lg"
+            className="absolute top-0 left-0 w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-palette-3/20 rounded-[2.5rem] z-10 shadow-lg"
           >
             <div className="absolute -bottom-2 right-12 w-8 h-8 bg-palette-3/20 rounded-sm transform rotate-45"></div>
             <img src="/images/teacher2.png" alt="Teacher" className="absolute bottom-4 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />
@@ -97,7 +97,7 @@ export default function HeroSection() {
               opacity: { duration: 0.5, delay: 0.2 },
               y: { duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
             }}
-            className="absolute top-[10%] right-0 lg:right-[5%] w-40 h-40 lg:w-52 lg:h-52 bg-palette-4 rounded-full z-20 shadow-lg"
+            className="absolute top-8 lg:top-[10%] right-0 lg:right-[5%] w-24 h-24 sm:w-40 sm:h-40 lg:w-52 lg:h-52 bg-palette-4 rounded-full z-20 shadow-lg"
           >
             <div className="absolute inset-0 rounded-full overflow-hidden z-10">
               <img src="/images/teacher1.png" alt="Student" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-full w-auto max-w-none object-contain" />
@@ -122,7 +122,7 @@ export default function HeroSection() {
               opacity: { duration: 0.5, delay: 0.4 },
               y: { duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 2 }
             }}
-            className="absolute bottom-[15%] left-[10%] lg:left-[5%] w-40 h-40 lg:w-52 lg:h-52 bg-palette-2 rounded-full z-30 shadow-lg ring-8 ring-palette-2/20"
+            className="absolute bottom-8 lg:bottom-[15%] left-4 lg:left-[5%] w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 bg-palette-2 rounded-full z-30 shadow-lg ring-8 ring-palette-2/20"
           >
             <div className="absolute inset-0 rounded-full overflow-hidden z-10">
               <img src="/images/teacher3.png" alt="Student" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-full w-auto max-w-none object-contain" />
@@ -147,7 +147,7 @@ export default function HeroSection() {
               opacity: { duration: 0.5, delay: 0.6 },
               y: { duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1 }
             }}
-            className="absolute bottom-[5%] right-[5%] lg:right-[5%] w-44 h-44 lg:w-56 lg:h-56 bg-palette-2/20 rounded-[2.5rem] z-10 shadow-lg"
+            className="absolute bottom-0 lg:bottom-[5%] right-0 lg:right-[5%] w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-palette-2/20 rounded-[2.5rem] z-10 shadow-lg"
           >
             <div className="absolute -bottom-3 left-12 w-8 h-8 bg-palette-2/20 rounded-sm transform rotate-45"></div>
             <img src="/images/teacher4.png" alt="Student cheering" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />

@@ -7,7 +7,7 @@ import { STUDY_ABROAD_CONSTANTS } from "@/constants/study-abroad-constants";
 
 export default function StudyAbroadHero() {
   return (
-    <section className="relative pt-44 pb-32 px-6 md:px-12 lg:px-24 overflow-hidden bg-palette-1 min-h-[600px] flex items-center justify-center">
+    <section className="relative pt-32 md:pt-44 pb-20 md:pb-32 px-4 md:px-12 lg:px-24 overflow-hidden bg-palette-1 min-h-[600px] flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
@@ -39,7 +39,7 @@ export default function StudyAbroadHero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6"
+          className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6"
         >
           {STUDY_ABROAD_CONSTANTS.HERO.TITLE_PART_1} <br className="hidden md:block" />
           <span className="text-palette-3">{STUDY_ABROAD_CONSTANTS.HERO.TITLE_PART_2}</span>
@@ -62,11 +62,11 @@ export default function StudyAbroadHero() {
           transition={{ delay: 0.3 }}
           className="flex flex-col sm:flex-row gap-4"
         >
-          <button className="flex items-center justify-center gap-2 bg-palette-3 hover:bg-[#8eb800] text-palette-1 px-8 py-4 rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-xl shadow-palette-3/30">
+          <button className="flex items-center justify-center gap-2 bg-palette-3 hover:bg-[#8eb800] text-palette-1 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-base md:text-lg transition-all transform hover:scale-105 shadow-xl shadow-palette-3/30">
             <Plane size={20} />
             {STUDY_ABROAD_CONSTANTS.HERO.BUTTON_REGISTER}
           </button>
-          <button className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 px-8 py-4 rounded-full font-bold text-lg transition-all">
+          <button className="flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm border border-white/20 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-base md:text-lg transition-all">
             <GraduationCap size={20} />
             {STUDY_ABROAD_CONSTANTS.HERO.BUTTON_DISCOVER}
           </button>

@@ -9,7 +9,7 @@ export default function PopularCoursesSection() {
 
 
   return (
-    <section id="tu-van-du-hoc" className="py-24 px-6 md:px-12 lg:px-24 bg-white relative overflow-hidden">
+    <section id="tu-van-du-hoc" className="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 lg:gap-16 items-start">
 
         {/* Left Column */}
@@ -21,7 +21,7 @@ export default function PopularCoursesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold leading-tight mb-8"
+              className="text-3xl md:text-5xl font-bold leading-tight mb-8"
             >
               {POPULAR_COURSES_CONSTANTS.TITLE}
             </motion.h2>

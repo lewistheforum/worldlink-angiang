@@ -16,7 +16,7 @@ export default function TestimonialSection() {
   }, [feedbacks.length]);
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-4 md:px-12 lg:px-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto text-center mb-16">
 
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 tracking-wide">
@@ -67,7 +67,7 @@ export default function TestimonialSection() {
                 pointerEvents: isActive ? "auto" : "none"
               }}
             >
-              <div className="bg-white rounded-xl p-8 shadow-2xl relative h-[250px] flex flex-col justify-between">
+              <div className="bg-white rounded-xl p-6 md:p-8 shadow-2xl relative h-auto min-h-[250px] flex flex-col justify-between">
                 <Quote size={40} className="absolute top-6 right-6 text-orange-200 opacity-50" strokeWidth={2} />
                 
                 <div>

@@ -5,7 +5,7 @@ import { FEATURES_CONSTANTS } from "@/constants/features-constants";
 export default function FeaturesSection() {
 
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 relative">
+    <section className="py-16 md:py-20 px-4 md:px-12 lg:px-24 relative">
       <div className="max-w-7xl mx-auto text-center">
 
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-12">
@@ -14,7 +14,7 @@ export default function FeaturesSection() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, idx) => (
-            <div key={idx} className="border border-gray-200 rounded-3xl p-8 hover:shadow-xl transition-shadow bg-white text-left flex flex-col items-start group">
+            <div key={idx} className="border border-gray-200 rounded-3xl p-6 md:p-8 hover:shadow-xl transition-shadow bg-white text-left flex flex-col items-start group">
               <div className={`w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-6 ${feature.iconBg} ${feature.iconColor}`}>
                 {feature.icon}
               </div>

@@ -11,7 +11,7 @@ export default function StudyAbroadMarkets() {
   const [activeTab, setActiveTab] = useState(markets[0].id);
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-white relative overflow-hidden">
+    <section className="py-16 md:py-24 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
 

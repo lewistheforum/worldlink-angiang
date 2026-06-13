@@ -10,7 +10,7 @@ const TikTokIcon = ({ size = 18, className = "" }) => (
 
 export default function Footer() {
   return (
-    <footer id="lien-he" className="bg-[#0a1128] text-white pt-24 pb-8 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+    <footer id="lien-he" className="bg-[#0a1128] text-white pt-16 md:pt-24 pb-8 px-4 md:px-12 lg:px-24 relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-palette-1/20 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[300px] h-[300px] bg-palette-3/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3 pointer-events-none"></div>

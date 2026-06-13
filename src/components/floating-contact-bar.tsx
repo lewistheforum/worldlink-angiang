@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail } from "lucide-react";
+import { Facebook } from "lucide-react";
 import * as motion from "framer-motion/client";
 
 const TikTokIcon = ({ size = 24, className = "" }) => (
@@ -23,11 +23,11 @@ export default function FloatingContactBar() {
       hoverColor: "hover:bg-blue-50 border border-blue-500/20",
     },
     {
-      name: "Điện thoại",
-      icon: <Phone size={22} className="text-white" fill="currentColor" />,
-      href: "tel:0766933552",
-      bgColor: "bg-green-500",
-      hoverColor: "hover:bg-green-600",
+      name: "Facebook",
+      icon: <Facebook size={22} className="text-white" fill="currentColor" />,
+      href: "https://www.facebook.com/worklink.angiang",
+      bgColor: "bg-blue-600",
+      hoverColor: "hover:bg-blue-700",
     },
     {
       name: "TikTok",
@@ -36,17 +36,10 @@ export default function FloatingContactBar() {
       bgColor: "bg-black",
       hoverColor: "hover:bg-gray-800",
     },
-    {
-      name: "Email",
-      icon: <Mail size={22} />,
-      href: "mailto:agiegroupag@gmail.com",
-      bgColor: "bg-red-500",
-      hoverColor: "hover:bg-red-600 text-white",
-    },
   ];
 
   return (
-    <div className="fixed top-1/2 -translate-y-1/2 right-6 z-[100] flex flex-col gap-4">
+    <div className="hidden md:flex fixed top-1/2 -translate-y-1/2 right-3 md:right-6 z-[100] flex-col gap-3 md:gap-4">
       {contacts.map((contact, index) => (
         <motion.a
           initial={{ opacity: 0, x: 50, scale: 0.8 }}
@@ -54,9 +47,9 @@ export default function FloatingContactBar() {
           transition={{ delay: index * 0.1, duration: 0.5, type: "spring" }}
           key={contact.name}
           href={contact.href}
-          target={contact.name !== "Điện thoại" && contact.name !== "Email" ? "_blank" : undefined}
-          rel={contact.name !== "Điện thoại" && contact.name !== "Email" ? "noopener noreferrer" : undefined}
-          className={`relative group flex items-center justify-center w-14 h-14 rounded-full text-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all transform hover:scale-110 hover:-translate-y-1 ${contact.bgColor} ${contact.hoverColor}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`relative group flex items-center justify-center w-12 h-12 md:w-14 md:h-14 rounded-full text-white shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all transform hover:scale-110 hover:-translate-y-1 ${contact.bgColor} ${contact.hoverColor}`}
           aria-label={contact.name}
         >
           {contact.icon}

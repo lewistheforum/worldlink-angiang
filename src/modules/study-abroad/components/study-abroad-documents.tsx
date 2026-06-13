@@ -11,7 +11,7 @@ export default function StudyAbroadDocuments() {
   const [selectedDoc, setSelectedDoc] = useState<{id: number, title: string, src: string} | null>(null);
 
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+    <section className="py-16 md:py-24 px-4 md:px-12 lg:px-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-center text-center mb-16">
           <div className="max-w-2xl mx-auto">
