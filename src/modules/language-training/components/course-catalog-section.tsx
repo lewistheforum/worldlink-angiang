@@ -13,7 +13,7 @@ export default function CourseCatalogSection({ variant = 'all' }: { variant?: 't
   const currentCourses = variant === 'tabs' ? allCourses[activeTab] : Object.values(allCourses).flat();
 
   return (
-    <section id="dao-tao-ngoai-ngu" className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
+    <section id="dao-tao-ngoai-ngu" className="py-16 md:py-24 px-4 md:px-12 lg:px-24 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-100/50 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-100/50 rounded-full blur-[80px] translate-y-1/3 -translate-x-1/3 pointer-events-none"></div>
@@ -25,7 +25,7 @@ export default function CourseCatalogSection({ variant = 'all' }: { variant?: 't
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
             {COURSE_CATALOG_CONSTANTS.TITLE}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">

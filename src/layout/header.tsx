@@ -11,7 +11,7 @@ export default function Header() {
   const navLinks = HEADER_CONSTANTS.NAV_LINKS;
 
   return (
-    <header className="fixed top-6 left-0 w-full z-50 px-6 md:px-12 lg:px-24">
+    <header className="fixed top-4 md:top-6 left-0 w-full z-50 px-4 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto bg-white rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] px-6 lg:px-8 py-2 flex items-center justify-between border border-gray-100">
         
         {/* Logo */}
@@ -59,7 +59,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {open && (
-        <div className="md:hidden fixed top-0 left-0 w-full h-screen bg-white z-50 p-6">
+        <div className="md:hidden fixed top-0 left-0 w-full h-screen bg-white z-50 p-6 overflow-y-auto">
           <div className="flex justify-end mb-8">
             <button onClick={() => setOpen(false)} className="text-3xl text-gray-900">
               ✕

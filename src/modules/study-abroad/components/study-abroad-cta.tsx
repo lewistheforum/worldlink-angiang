@@ -6,8 +6,8 @@ import { STUDY_ABROAD_CONSTANTS } from "@/constants/study-abroad-constants";
 
 export default function StudyAbroadCTA() {
   return (
-    <section className="py-20 px-6 md:px-12 lg:px-24 bg-white relative overflow-hidden">
-      <div className="max-w-5xl mx-auto bg-gradient-to-br from-palette-1 to-palette-2 rounded-[3rem] p-10 md:p-16 text-center relative overflow-hidden shadow-2xl">
+    <section className="py-16 md:py-20 px-4 md:px-12 lg:px-24 bg-white relative overflow-hidden">
+      <div className="max-w-5xl mx-auto bg-gradient-to-br from-palette-1 to-palette-2 rounded-[3rem] p-8 md:p-16 text-center relative overflow-hidden shadow-2xl">
         
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-palette-3 opacity-20 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/4"></div>
