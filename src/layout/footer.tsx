@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Facebook, Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import { FOOTER_CONSTANTS } from "@/constants/layout-constants";
+import Image from "next/image";
 
 const TikTokIcon = ({ size = 18, className = "" }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
@@ -36,13 +37,17 @@ export default function Footer() {
                 <span className="sr-only">TikTok</span>
                 <TikTokIcon size={18} />
               </a>
+              <a href="https://zalo.me/0766933552" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-palette-1 hover:border-palette-1 hover:-translate-y-1 transition-all duration-300 text-gray-400 hover:text-white">
+                <span className="sr-only">Zalo</span>
+                <Image src="https://congtyquatang.com.vn/wp-content/uploads/2026/03/logo-zalo-vector.png" alt="Zalo" width={45} height={45} />
+              </a>
             </div>
           </div>
 
           {/* Column 2: Quick Links */}
           <div className="lg:col-span-1 lg:ml-8">
             <h3 className="text-lg font-bold mb-6 text-white flex items-center gap-2">
-              <span className="w-8 h-1 bg-palette-3 rounded-full"></span>
+              {/* <span className="w-8 h-1 bg-palette-3 rounded-full"></span> */}
               {FOOTER_CONSTANTS.QUICK_LINKS_TITLE}
             </h3>
             <ul className="space-y-4 text-gray-400 text-sm">
@@ -58,46 +63,48 @@ export default function Footer() {
           </div>
 
           {/* Column 3: Contact Info */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-1">
             <h3 className="text-lg font-bold mb-6 text-white flex items-center gap-2">
-              <span className="w-8 h-1 bg-palette-3 rounded-full"></span>
+              {/* <span className="w-8 h-1 bg-palette-3 rounded-full"></span> */}
               {FOOTER_CONSTANTS.CONTACT_TITLE}
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-400 text-sm">
-              <div className="space-y-4">
-                <div className="flex items-start gap-4 group">
-                  <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-palette-1 transition-colors">
-                    <Phone size={16} className="text-palette-3" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold mb-1">{FOOTER_CONSTANTS.PHONE_LABEL}</p>
-                    <p>{FOOTER_CONSTANTS.PHONE}</p>
-                  </div>
+            <div className="space-y-4 text-[14px]">
+              <div className="flex items-start gap-4 group">
+                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-palette-1 transition-colors">
+                  <Phone size={16} className="text-palette-3" />
                 </div>
-
-                <div className="flex items-start gap-4 group">
-                  <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-palette-1 transition-colors">
-                    <Mail size={16} className="text-palette-3" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold mb-1">{FOOTER_CONSTANTS.EMAIL_LABEL}</p>
-                    <p>{FOOTER_CONSTANTS.EMAIL}</p>
-                  </div>
+                <div>
+                  <p className="text-white font-semibold mb-1">{FOOTER_CONSTANTS.PHONE_LABEL}</p>
+                  <p>{FOOTER_CONSTANTS.PHONE}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4 group">
                 <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-palette-1 transition-colors">
-                  <MapPin size={16} className="text-palette-3" />
+                  <Mail size={16} className="text-palette-3" />
                 </div>
                 <div>
-                  <p className="text-white font-semibold mb-1">{FOOTER_CONSTANTS.ADDRESS_LABEL}</p>
-                  <p className="leading-relaxed">{FOOTER_CONSTANTS.ADDRESS}</p>
+                  <p className="text-white font-semibold mb-1">{FOOTER_CONSTANTS.EMAIL_LABEL}</p>
+                  <p>{FOOTER_CONSTANTS.EMAIL}</p>
                 </div>
               </div>
             </div>
           </div>
-
+          <div className="lg:col-span-1">
+            <h3 className="text-lg font-bold mb-6 text-white flex items-center gap-2">
+              {/* <span className="w-8 h-1 bg-palette-3 rounded-full"></span> */}
+              {FOOTER_CONSTANTS.CONTACT_TITLE}
+            </h3>
+            <div className="flex flex-row items-start gap-4 group">
+              <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-palette-1 transition-colors">
+                <MapPin size={16} className="text-palette-3" />
+              </div>
+              <div className="text-[14px]">
+                <p className="text-white font-semibold mb-1">{FOOTER_CONSTANTS.ADDRESS_LABEL}</p>
+                <p className="leading-relaxed">{FOOTER_CONSTANTS.ADDRESS}</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Bar */}

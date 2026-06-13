@@ -13,6 +13,7 @@ export const FOOTER_CONSTANTS = {
   ABOUT_TEXT: "WorkLink An Giang tự hào là cầu nối giáo dục và nghề nghiệp uy tín, cung cấp các chương trình đào tạo ngoại ngữ chuyên sâu và tư vấn du học chuyên nghiệp, mở ra tương lai tươi sáng cho học viên.",
   QUICK_LINKS_TITLE: "Liên Kết Nhanh",
   CONTACT_TITLE: "Thông Tin Liên Hệ",
+  ADDRESS_TITLE: "Địa chỉ",
   PHONE_LABEL: "Điện thoại",
   PHONE: "0766 933 552",
   EMAIL_LABEL: "Email",
