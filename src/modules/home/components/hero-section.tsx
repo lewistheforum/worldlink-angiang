@@ -1,6 +1,7 @@
 "use client";
 
 import { Check, Video, Youtube, Play, Target } from "lucide-react";
+import Image from "next/image";
 import * as motion from "framer-motion/client";
 import { HERO_CONSTANTS } from "@/constants/hero-constants";
 
@@ -76,7 +77,7 @@ export default function HeroSection() {
             className="absolute top-0 left-0 w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-palette-5 rounded-[2.5rem] z-10 shadow-lg"
           >
             <div className="absolute -bottom-2 right-12 w-8 h-8 bg-palette-5 rounded-sm transform rotate-45"></div>
-            <img src="/images/teacher2.png" alt="Teacher" className="absolute bottom-4 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />
+            <Image src="/images/teacher2.png" alt="Teacher" width={400} height={400} className="absolute bottom-4 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />
 
             {/* Floating icon */}
             <motion.div
@@ -99,7 +100,7 @@ export default function HeroSection() {
             className="absolute top-8 lg:top-[10%] right-0 lg:right-[5%] w-24 h-24 sm:w-40 sm:h-40 lg:w-52 lg:h-52 bg-palette-4 rounded-full z-20 shadow-lg"
           >
             <div className="absolute inset-0 rounded-full overflow-hidden z-10">
-              <img src="/images/teacher1.png" alt="Student" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-full w-auto max-w-none object-contain" />
+              <Image src="/images/teacher1.png" alt="Student" width={400} height={400} className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-full w-auto max-w-none object-contain" />
             </div>
 
             {/* Floating icon (Google Drive like) */}
@@ -124,7 +125,7 @@ export default function HeroSection() {
             className="absolute bottom-8 lg:bottom-[15%] left-4 lg:left-[5%] w-28 h-28 sm:w-40 sm:h-40 lg:w-52 lg:h-52 bg-palette-2 rounded-full z-30 shadow-lg ring-8 ring-palette-2/20"
           >
             <div className="absolute inset-0 rounded-full overflow-hidden z-10">
-              <img src="/images/teacher3.png" alt="Student" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-full w-auto max-w-none object-contain" />
+              <Image src="/images/teacher3.png" alt="Student" width={400} height={400} className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-full w-auto max-w-none object-contain" />
             </div>
 
             {/* Floating icon (Play like) */}
@@ -149,7 +150,7 @@ export default function HeroSection() {
             className="absolute bottom-0 lg:bottom-[5%] right-0 lg:right-[5%] w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-white rounded-[2.5rem] z-10 shadow-lg"
           >
             <div className="absolute -bottom-3 left-12 w-8 h-8 bg-white rounded-sm transform rotate-45"></div>
-            <img src="/images/teacher4.png" alt="Student cheering" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />
+            <Image src="/images/teacher4.png" alt="Student cheering" width={400} height={400} className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />
 
             {/* Floating icon (Youtube like) */}
             <motion.div

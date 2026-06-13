@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { HEADER_CONSTANTS } from "@/constants/layout-constants";
 import { usePathname, useRouter } from "next/navigation";
@@ -14,8 +15,7 @@ export default function Header() {
   const router = useRouter();
 
   const segments = pathname.split("/");
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const currentLocale = (i18n.locales.includes(segments[1] as any) ? segments[1] : i18n.defaultLocale) as Locale;
+  const currentLocale = (i18n.locales.includes(segments[1] as Locale) ? segments[1] : i18n.defaultLocale) as Locale;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [dict, setDict] = useState<any>(null);
@@ -30,9 +30,9 @@ export default function Header() {
     { name: dict.header.navLinks.languageTraining, href: `/${currentLocale}/language-training` },
     { name: dict.header.navLinks.studyAbroad, href: `/${currentLocale}/study-abroad` },
     { name: dict.header.navLinks.contact, href: `/${currentLocale}/contact` }
-  ] : HEADER_CONSTANTS.NAV_LINKS.map(link => ({ 
-    name: link.name, 
-    href: `/${currentLocale}${link.href === '/' ? '' : link.href}` 
+  ] : HEADER_CONSTANTS.NAV_LINKS.map(link => ({
+    name: link.name,
+    href: `/${currentLocale}${link.href === '/' ? '' : link.href}`
   }));
 
   const contactBtn = dict ? dict.header.contactBtn : HEADER_CONSTANTS.CONTACT_BTN;
@@ -40,8 +40,7 @@ export default function Header() {
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value;
     const newSegments = [...segments];
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    if (i18n.locales.includes(newSegments[1] as any)) {
+    if (i18n.locales.includes(newSegments[1] as Locale)) {
       newSegments[1] = newLocale;
     } else {
       newSegments.splice(1, 0, newLocale);
@@ -52,24 +51,23 @@ export default function Header() {
   return (
     <header className="fixed top-4 md:top-6 left-0 w-full z-50 px-4 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto bg-white rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] px-6 lg:px-8 py-2 flex items-center justify-between border border-gray-100">
-        
+
         {/* Logo */}
         <Link href={`/${currentLocale}`} className="flex items-center gap-2">
-          <img src="/images/logo.jpg" alt="WorkLink An Giang Logo" className="h-12 lg:h-16 w-auto rounded-md object-contain" />
+          <Image src="/images/logo.jpg" alt="WorkLink An Giang Logo" width={200} height={64} className="h-12 lg:h-16 w-auto rounded-md object-contain" />
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
+            <Link
+              key={link.name}
               href={link.href}
               onClick={() => setActiveHash(link.href)}
-              className={`font-medium transition-all duration-300 ${
-                activeHash === link.href 
-                  ? "text-palette-1 font-bold scale-105" 
-                  : "text-gray-600 hover:text-palette-1"
-              }`}
+              className={`font-medium transition-all duration-300 ${activeHash === link.href
+                ? "text-palette-1 font-bold scale-105"
+                : "text-gray-600 hover:text-palette-1"
+                }`}
             >
               {link.name}
             </Link>
@@ -78,8 +76,8 @@ export default function Header() {
 
         {/* Right side: Language Selector + CTA Button */}
         <div className="hidden md:flex items-center gap-4">
-          <select 
-            value={currentLocale} 
+          <select
+            value={currentLocale}
             onChange={handleLanguageChange}
             className="bg-gray-50 border border-gray-200 text-gray-700 text-sm rounded-lg focus:ring-palette-1 focus:border-palette-1 block p-2 outline-none cursor-pointer"
           >
@@ -89,7 +87,7 @@ export default function Header() {
             <option value="zh">🇨🇳 ZH</option>
             <option value="ko">🇰🇷 KO</option>
           </select>
-          <Link 
+          <Link
             href={`/${currentLocale}/contact`}
             className="bg-palette-1 text-white px-6 py-2.5 rounded-full font-semibold hover:bg-palette-2 transition shadow-md"
           >
@@ -99,8 +97,8 @@ export default function Header() {
 
         {/* Mobile menu button & lang selector */}
         <div className="flex md:hidden items-center gap-3">
-          <select 
-            value={currentLocale} 
+          <select
+            value={currentLocale}
             onChange={handleLanguageChange}
             className="bg-gray-50 border border-gray-200 text-gray-700 text-sm rounded-lg block p-1.5 outline-none cursor-pointer"
           >
@@ -110,7 +108,7 @@ export default function Header() {
             <option value="zh">ZH</option>
             <option value="ko">KO</option>
           </select>
-          <button 
+          <button
             className="text-gray-900 text-2xl"
             onClick={() => setOpen(!open)}
           >
@@ -129,8 +127,8 @@ export default function Header() {
           </div>
           <div className="flex flex-col gap-6 text-center">
             {navLinks.map((link) => (
-              <Link 
-                key={link.name} 
+              <Link
+                key={link.name}
                 href={link.href}
                 className="text-2xl font-medium text-gray-900"
                 onClick={() => setOpen(false)}
@@ -138,7 +136,7 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <Link 
+            <Link
               href={`/${currentLocale}/contact`}
               className="mt-4 bg-palette-1 text-white px-6 py-3 rounded-full font-semibold inline-block"
               onClick={() => setOpen(false)}

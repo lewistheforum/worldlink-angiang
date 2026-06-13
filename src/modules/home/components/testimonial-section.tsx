@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Star, Quote } from "lucide-react";
 import { feedbacksData as feedbacks } from "@/data/testimonial-data";
 import { TESTIMONIAL_CONSTANTS } from "@/constants/testimonial-constants";
@@ -72,7 +73,7 @@ export default function TestimonialSection() {
                 
                 <div>
                   <div className="flex items-center gap-4 mb-4">
-                    <img src={fb.avatar} alt={fb.name} className="w-14 h-14 rounded-full object-cover shadow-sm" />
+                    <Image src={fb.avatar} alt={fb.name} width={56} height={56} className="w-14 h-14 rounded-full object-cover shadow-sm" />
                     <div>
                       <h4 className="font-bold text-gray-900 text-lg">{fb.name}</h4>
                       <p className="text-xs text-gray-500 font-medium">{fb.school}</p>

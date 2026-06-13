@@ -1,6 +1,7 @@
 "use client";
 
 import * as motion from "framer-motion/client";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { carouselImagesData as carouselImages } from "@/data/virtual-mentorship-data";
 import { VIRTUAL_MENTORSHIP_CONSTANTS } from "@/constants/virtual-mentorship-constants";
@@ -64,11 +65,12 @@ export default function VirtualMentorshipSection() {
         >
           <div className="w-full aspect-[4/3] md:aspect-[3/2] rounded-[2rem] overflow-hidden border-4 border-white shadow-2xl relative z-10 group bg-white">
             {images.map((src, idx) => (
-              <img 
+              <Image 
                 key={src}
                 src={src} 
                 alt={`Giới thiệu WorkLink ${idx + 1}`} 
-                className={`absolute inset-0 w-full h-full object-cover transform transition-all duration-[2000ms] ease-in-out ${
+                fill
+                className={`object-cover transform transition-all duration-[2000ms] ease-in-out ${
                   idx === currentImageIdx ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
                 } group-hover:scale-105 group-hover:duration-700`} 
               />

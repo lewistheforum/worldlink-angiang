@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import * as motion from "framer-motion/client";
 import { ChevronRight, Globe2, BookOpen } from "lucide-react";
 import { LANGUAGE_TRAINING_CONSTANTS } from "@/constants/language-training-constants";
@@ -10,10 +11,11 @@ export default function LanguageTrainingHero() {
     <section className="relative pt-32 md:pt-44 pb-20 md:pb-32 px-4 md:px-12 lg:px-24 overflow-hidden bg-palette-1 min-h-[600px] flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <Image 
           src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop" 
           alt="Language Training Background" 
-          className="w-full h-full object-cover object-center opacity-30 mix-blend-overlay"
+          fill
+          className="object-cover object-center opacity-30 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-palette-1 via-palette-1/90 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-palette-1/80 to-transparent"></div>
