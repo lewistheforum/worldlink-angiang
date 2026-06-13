@@ -73,9 +73,9 @@ export default function HeroSection() {
               opacity: { duration: 0.5 },
               y: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }
             }}
-            className="absolute top-0 left-0 w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-palette-3/20 rounded-[2.5rem] z-10 shadow-lg"
+            className="absolute top-0 left-0 w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-palette-5 rounded-[2.5rem] z-10 shadow-lg"
           >
-            <div className="absolute -bottom-2 right-12 w-8 h-8 bg-palette-3/20 rounded-sm transform rotate-45"></div>
+            <div className="absolute -bottom-2 right-12 w-8 h-8 bg-palette-5 rounded-sm transform rotate-45"></div>
             <img src="/images/teacher2.png" alt="Teacher" className="absolute bottom-4 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />
 
             {/* Floating icon */}
@@ -146,9 +146,9 @@ export default function HeroSection() {
               opacity: { duration: 0.5, delay: 0.6 },
               y: { duration: 5.5, repeat: Infinity, ease: "easeInOut", delay: 1 }
             }}
-            className="absolute bottom-0 lg:bottom-[5%] right-0 lg:right-[5%] w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-palette-2/20 rounded-[2.5rem] z-10 shadow-lg"
+            className="absolute bottom-0 lg:bottom-[5%] right-0 lg:right-[5%] w-28 h-28 sm:w-44 sm:h-44 lg:w-56 lg:h-56 bg-white rounded-[2.5rem] z-10 shadow-lg"
           >
-            <div className="absolute -bottom-3 left-12 w-8 h-8 bg-palette-2/20 rounded-sm transform rotate-45"></div>
+            <div className="absolute -bottom-3 left-12 w-8 h-8 bg-white rounded-sm transform rotate-45"></div>
             <img src="/images/teacher4.png" alt="Student cheering" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-[110%] w-auto max-w-none object-contain z-10" />
 
             {/* Floating icon (Youtube like) */}
