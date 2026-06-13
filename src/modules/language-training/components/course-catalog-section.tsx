@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Star, Globe } from "lucide-react";
 import * as motion from "framer-motion/client";
 import { languagesData as languages, allCoursesData as allCourses } from "@/data/course-catalog-data";
@@ -67,10 +68,11 @@ export default function CourseCatalogSection({ variant = 'all' }: { variant?: 't
                 >
                   {/* Image Area */}
                   <div className="relative h-48 w-full rounded-2xl overflow-hidden mb-4">
-                    <img
+                    <Image
                       src={course.image}
                       alt={course.title}
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                      fill
+                      className="object-cover transform group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
 
@@ -117,10 +119,11 @@ export default function CourseCatalogSection({ variant = 'all' }: { variant?: 't
               >
                 {/* Image Area */}
                 <div className="relative h-48 w-full rounded-2xl overflow-hidden mb-4">
-                  <img
+                  <Image
                     src={course.image}
                     alt={course.title}
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                    fill
+                    className="object-cover transform group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
 

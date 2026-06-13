@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import * as motion from "framer-motion/client";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 
@@ -65,10 +66,11 @@ export default function StudyAbroadMarkets() {
               >
                 <div className="bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-gray-100">
                   <div className="h-[250px] md:h-[350px] w-full relative overflow-hidden group">
-                    <img 
+                    <Image 
                       src={market.image} 
                       alt={`Du học ${market.name}`} 
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                      fill
+                      className="object-cover transform group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <h3 className="absolute bottom-6 left-8 text-4xl font-extrabold text-white">{STUDY_ABROAD_CONSTANTS.MARKETS.STUDY_IN} {market.name}</h3>

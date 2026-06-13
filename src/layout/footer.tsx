@@ -22,7 +22,7 @@ export default function Footer() {
           {/* Column 1: Brand & About */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-6 bg-white p-2 rounded-xl">
-              <img src="/images/logo.jpg" alt="WorkLink An Giang Logo" className="h-14 w-auto object-contain" />
+              <Image src="/images/logo.jpg" alt="WorkLink An Giang Logo" width={200} height={56} className="h-14 w-auto object-contain" />
             </Link>
             <p className="text-gray-400 mb-8 text-sm leading-relaxed">
               {FOOTER_CONSTANTS.ABOUT_TEXT}

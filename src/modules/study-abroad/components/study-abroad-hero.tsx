@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import * as motion from "framer-motion/client";
 import { Plane, ChevronRight, GraduationCap } from "lucide-react";
 import { STUDY_ABROAD_CONSTANTS } from "@/constants/study-abroad-constants";
@@ -10,10 +11,11 @@ export default function StudyAbroadHero() {
     <section className="relative pt-32 md:pt-44 pb-20 md:pb-32 px-4 md:px-12 lg:px-24 overflow-hidden bg-palette-1 min-h-[600px] flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
+        <Image 
           src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop" 
           alt="Study Abroad Background" 
-          className="w-full h-full object-cover object-center opacity-30 mix-blend-overlay"
+          fill
+          className="object-cover object-center opacity-30 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-palette-1 via-palette-1/90 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-palette-1/80 to-transparent"></div>

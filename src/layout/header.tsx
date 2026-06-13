@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { HEADER_CONSTANTS } from "@/constants/layout-constants";
 import { usePathname, useRouter } from "next/navigation";
@@ -14,8 +15,9 @@ export default function Header() {
   const router = useRouter();
 
   const segments = pathname.split("/");
-  const currentLocale = (i18n.locales.includes(segments[1] as any) ? segments[1] : i18n.defaultLocale) as Locale;
+  const currentLocale = (i18n.locales.includes(segments[1] as Locale) ? segments[1] : i18n.defaultLocale) as Locale;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [dict, setDict] = useState<any>(null);
 
   useEffect(() => {
@@ -38,7 +40,7 @@ export default function Header() {
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLocale = e.target.value;
     const newSegments = [...segments];
-    if (i18n.locales.includes(newSegments[1] as any)) {
+    if (i18n.locales.includes(newSegments[1] as Locale)) {
       newSegments[1] = newLocale;
     } else {
       newSegments.splice(1, 0, newLocale);
@@ -52,7 +54,7 @@ export default function Header() {
         
         {/* Logo */}
         <Link href={`/${currentLocale}`} className="flex items-center gap-2">
-          <img src="/images/logo.jpg" alt="WorkLink An Giang Logo" className="h-12 lg:h-16 w-auto rounded-md object-contain" />
+          <Image src="/images/logo.jpg" alt="WorkLink An Giang Logo" width={200} height={64} className="h-12 lg:h-16 w-auto rounded-md object-contain" />
         </Link>
 
         {/* Desktop Navigation */}

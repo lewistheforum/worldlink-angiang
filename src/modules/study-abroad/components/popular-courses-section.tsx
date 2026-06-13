@@ -1,6 +1,7 @@
 "use client";
 
 import { CheckCircle2, Globe } from "lucide-react";
+import Image from "next/image";
 import * as motion from "framer-motion/client";
 import { marketsData as markets, servicesData as services } from "@/data/popular-courses-data";
 import { POPULAR_COURSES_CONSTANTS } from "@/constants/popular-courses-constants";
@@ -81,9 +82,10 @@ export default function PopularCoursesSection() {
 
             {/* Large Image */}
             <div className="w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden border-[6px] border-palette-1 shadow-2xl relative z-10 group bg-white">
-              <img
+              <Image
                 src="/images/consulting-main.jpg"
                 alt="Study Abroad Consultation"
+                width={800} height={800}
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
               />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
@@ -108,9 +110,10 @@ export default function PopularCoursesSection() {
             transition={{ delay: 0.5 }}
             className="w-full h-[250px] md:h-[350px] rounded-3xl overflow-hidden border-[6px] border-white shadow-2xl bg-white group"
           >
-            <img
+            <Image
               src="/images/consulting-top.jpg"
               alt="Student consulting"
+              width={600} height={600}
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
             />
           </motion.div>
@@ -122,9 +125,10 @@ export default function PopularCoursesSection() {
             transition={{ delay: 0.6 }}
             className="w-full h-[250px] md:h-[350px] rounded-3xl overflow-hidden border-[6px] border-white shadow-2xl bg-white group"
           >
-            <img
+            <Image
               src="/images/consulting-bottom.jpg"
               alt="Smiling student"
+              width={600} height={600}
               className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
             />
           </motion.div>
